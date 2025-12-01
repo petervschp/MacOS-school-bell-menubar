@@ -57,7 +57,7 @@ struct ContentView: View {
                             .tag(type)
                     }
                 }
-                .pickerStyle(RadioGroupPickerStyle())  // vertikálne rádio tlačidlá
+                .pickerStyle(RadioGroupPickerStyle())
             }
 
             Divider()
@@ -69,6 +69,10 @@ struct ContentView: View {
                     openWindow(id: "editor")
                 }
 
+                Button("O aplikácii…") {
+                    openWindow(id: "about")
+                }
+
                 Spacer()
 
                 Button("Ukončiť") {
@@ -77,6 +81,6 @@ struct ContentView: View {
             }
         }
         .padding(16)
-        .frame(minWidth: 320, alignment: .leading)
+        .frame(minWidth: 360, alignment: .leading)
     }
 }
