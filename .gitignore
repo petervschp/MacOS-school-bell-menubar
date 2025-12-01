@@ -1,0 +1,12 @@
+# Xcode
+DerivedData/
+build/
+*.xcuserdata
+*.xcuserstate
+
+# SwiftPM
+.build/
+
+# macOS noise
+.DS_Store
+
